@@ -22,7 +22,7 @@
 ## 🚀 Installation
 
 ```
-$ git clone https://github.com/MatheusDevios/Notes-Application.git
+$ git clone https://github.com/MatheusDevios/Notes-MERN-APP.git
 $ cd Notes-Application
 $ npm install
 $ npm start
