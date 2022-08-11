@@ -8,8 +8,10 @@ const app = express();
 app.use(cors());
 app.use(express.json());
 
-// mongoose.connect("mongodb+srv://Matheus:notesmatehus@notes.aj2f3.mongodb.net/?retryWrites=true&w=majority");
-mongoose.connect("mongodb://localhost:27017/notesDB");
+let mongodbURL = process.env.REACT_APP_URL;
+
+mongoose.connect(mongodbURL);
+// mongoose.connect("mongodb://localhost:27017/notesDB");
 
 const noteSchema = new mongoose.Schema({
   title: String,
