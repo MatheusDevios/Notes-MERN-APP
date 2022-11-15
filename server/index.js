@@ -10,8 +10,8 @@ app.use(express.json());
 
 let mongodbURL = process.env.REACT_APP_URL;
 
-mongoose.connect(mongodbURL);
-// mongoose.connect("mongodb://localhost:27017/notesDB");
+// mongoose.connect(mongodbURL);
+mongoose.connect("mongodb://127.0.0.1:27017/dataNotes");
 
 const noteSchema = new mongoose.Schema({
   title: String,
